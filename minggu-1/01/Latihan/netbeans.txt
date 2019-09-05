@@ -1,0 +1,4 @@
+Product Version: Apache NetBeans IDE 11.1
+Java: 11.0.4; OpenJDK 64-Bit Server VM 11.0.4+11-post-Ubuntu-1ubuntu218.04.3
+Runtime: OpenJDK Runtime Environment 11.0.4+11-post-Ubuntu-1ubuntu218.04.3
+System: Linux version 5.0.0-23-generic running on amd64; UTF-8; en_US (nb)
