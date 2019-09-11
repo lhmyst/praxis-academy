@@ -1,0 +1,20 @@
+apply plugin: 'java'
+apply plugin: 'jacoco'
+apply plugin: 'application'
+
+
+mainClassName = 'Concurrency.Main'
+
+repositories {
+    jcenter()
+}
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'Concurrency.SimpleThreads'
+    }
+}
+
+dependencies {
+    testCompile 'junit:junit:4.12'
+}
