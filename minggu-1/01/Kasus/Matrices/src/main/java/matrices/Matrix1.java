@@ -3,14 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Matrices;
-
+package matrices;
 
 /**
  *
- * @author lukman
+ * @author lhmyst
  */
-public class Matrices2 {
+public class Matrix1 {
 
     /**
      * @param args the command line arguments
