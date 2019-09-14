@@ -1,0 +1,673 @@
+ping
+
+C:\Users\lhmyst>ping 8.8.8.8
+
+Pinging 8.8.8.8 with 32 bytes of data:
+Reply from 8.8.8.8: bytes=32 time=240ms TTL=55
+Reply from 8.8.8.8: bytes=32 time=935ms TTL=55
+Reply from 8.8.8.8: bytes=32 time=40ms TTL=55
+Reply from 8.8.8.8: bytes=32 time=61ms TTL=55
+
+Ping statistics for 8.8.8.8:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 40ms, Maximum = 935ms, Average = 319ms
+
+=====================================================
+
+PowerShell
+
+C:\Users\lhmyst>PowerShell
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+PS C:\Users\lhmyst>
+
+=========================================================
+
+dir
+
+C:\Users\lhmyst>dir
+ Volume in drive C is OS
+ Volume Serial Number is 9A81-F265
+
+ Directory of C:\Users\lhmyst
+
+09/12/2019  12:25 PM    <DIR>          .
+09/12/2019  12:25 PM    <DIR>          ..
+09/14/2019  07:55 PM             1,160 .bash_history
+09/12/2019  08:15 AM                54 .gitconfig
+09/12/2019  12:47 AM    <DIR>          .gradle
+09/11/2019  11:29 PM    <DIR>          .nbi
+09/11/2019  11:17 PM    <DIR>          .oracle_jre_usage
+...
+               2 File(s)          1,214 bytes
+              21 Dir(s)  449,700,569,088 bytes free
+
+============================================================
+
+cd
+
+C:\Users\lhmyst>cd Documents
+
+C:\Users\lhmyst\Documents>cd ..
+
+C:\Users\lhmyst>cd Documents\NetBeansProjects
+
+C:\Users\lhmyst\Documents\NetBeansProjects>
+
+===========================================================
+
+md
+
+C:\Users\lhmyst\Documents\Shellscript>dir
+ Volume in drive C is OS
+ Volume Serial Number is 9A81-F265
+
+ Directory of C:\Users\lhmyst\Documents\Shellscript
+
+09/14/2019  07:27 PM    <DIR>          .
+09/14/2019  07:27 PM    <DIR>          ..
+09/14/2019  07:27 PM                26 My First Script.ps1
+               1 File(s)             26 bytes
+               2 Dir(s)  449,695,358,976 bytes free
+
+C:\Users\lhmyst\Documents\Shellscript>md testmd
+
+C:\Users\lhmyst\Documents\Shellscript>dir
+ Volume in drive C is OS
+ Volume Serial Number is 9A81-F265
+
+ Directory of C:\Users\lhmyst\Documents\Shellscript
+
+09/14/2019  08:02 PM    <DIR>          .
+09/14/2019  08:02 PM    <DIR>          ..
+09/14/2019  07:27 PM                26 My First Script.ps1
+09/14/2019  08:02 PM    <DIR>          testmd
+               1 File(s)             26 bytes
+               3 Dir(s)  449,695,092,736 bytes free
+
+C:\Users\lhmyst\Documents\Shellscript>cd testmd
+
+C:\Users\lhmyst\Documents\Shellscript\testmd>
+
+============================================================================
+
+echo
+
+C:\Users\lhmyst>echo
+ECHO is on.
+
+C:\Users\lhmyst>echo.
+
+
+C:\Users\lhmyst>
+
+===============================
+
+date
+
+C:\Users\lhmyst>date /t
+Sat 09/14/2019
+
+===============================
+
+ipconfig
+
+C:\Users\lhmyst>ipconfig /all
+
+Windows IP Configuration
+
+...........
+
+
+Wireless LAN adapter Local Area Connection* 1:
+
+...........
+
+Wireless LAN adapter Local Area Connection* 2:
+
+...........
+
+Wireless LAN adapter Wi-Fi:
+
+...........
+
+Ethernet adapter Bluetooth Network Connection:
+
+...........
+
+========================================================================================
+
+netstat
+
+C:\Users\lhmyst>netstat -e -s
+Interface Statistics
+
+                           Received            Sent
+
+Bytes                     130276836        52685082
+Unicast packets              249162          153276
+Non-unicast packets            2322           11058
+Discards                          0               0
+Errors                            0               0
+Unknown protocols                 0
+
+IPv4 Statistics
+
+  Packets Received                   = 40970
+  Received Header Errors             = 0
+  Received Address Errors            = 0
+  Datagrams Forwarded                = 0
+  Unknown Protocols Received         = 1
+  Received Packets Discarded         = 8865
+  Received Packets Delivered         = 50224
+  Output Requests                    = 36380
+  Routing Discards                   = 0
+  Discarded Output Packets           = 84
+  Output Packet No Route             = 4
+  Reassembly Required                = 0
+  Reassembly Successful              = 0
+  Reassembly Failures                = 0
+  Datagrams Successfully Fragmented  = 0
+  Datagrams Failing Fragmentation    = 0
+  Fragments Created                  = 0
+
+IPv6 Statistics
+
+  Packets Received                   = 795
+  Received Header Errors             = 0
+  Received Address Errors            = 258
+  Datagrams Forwarded                = 0
+  Unknown Protocols Received         = 0
+  Received Packets Discarded         = 68
+  Received Packets Delivered         = 611
+  Output Requests                    = 164
+  Routing Discards                   = 0
+  Discarded Output Packets           = 0
+  Output Packet No Route             = 0
+  Reassembly Required                = 0
+  Reassembly Successful              = 0
+  Reassembly Failures                = 0
+  Datagrams Successfully Fragmented  = 0
+  Datagrams Failing Fragmentation    = 0
+  Fragments Created                  = 0
+
+ICMPv4 Statistics
+
+                            Received    Sent
+  Messages                  48          48
+  Errors                    2           0
+  Destination Unreachable   36          37
+  Time Exceeded             0           0
+  Parameter Problems        0           0
+  Source Quenches           0           0
+  Redirects                 0           0
+  Echo Replies              10          0
+  Echos                     0           11
+  Timestamps                0           0
+  Timestamp Replies         0           0
+  Address Masks             0           0
+  Address Mask Replies      0           0
+  Router Solicitations      0           0
+  Router Advertisements     0           0
+
+ICMPv6 Statistics
+
+                            Received    Sent
+  Messages                  42          7
+  Errors                    0           0
+  Destination Unreachable   1           0
+  Packet Too Big            0           0
+  Time Exceeded             0           0
+  Parameter Problems        0           0
+  Echos                     0           0
+  Echo Replies              0           0
+  MLD Queries               0           0
+  MLD Reports               0           0
+  MLD Dones                 0           0
+  Router Solicitations      0           1
+  Router Advertisements     36          0
+  Neighbor Solicitations    1           4
+  Neighbor Advertisements   4           2
+  Redirects                 0           0
+  Router Renumberings       0           0
+
+TCP Statistics for IPv4
+
+  Active Opens                        = 835
+  Passive Opens                       = 155
+  Failed Connection Attempts          = 136
+  Reset Connections                   = 193
+  Current Connections                 = 33
+  Segments Received                   = 33552
+  Segments Sent                       = 29288
+  Segments Retransmitted              = 944
+
+TCP Statistics for IPv6
+
+  Active Opens                        = 4
+  Passive Opens                       = 0
+  Failed Connection Attempts          = 4
+  Reset Connections                   = 0
+  Current Connections                 = 0
+  Segments Received                   = 24
+  Segments Sent                       = 16
+  Segments Retransmitted              = 8
+
+UDP Statistics for IPv4
+
+  Datagrams Received    = 6317
+  No Ports              = 603
+  Receive Errors        = 0
+  Datagrams Sent        = 4293
+
+UDP Statistics for IPv6
+
+  Datagrams Received    = 1013
+  No Ports              = 39
+  Receive Errors        = 0
+  Datagrams Sent        = 98
+
+=========================================================
+
+cmdkey
+
+C:\Users\lhmyst>cmdkey /list
+
+Currently stored credentials:
+
+    Target: MicrosoftAccount:target=SSO_POP_User:user=xxxxx
+	............
+
+    Target: LegacyGeneric:target=XboxLive
+    Type: Generic
+    Saved for this logon only
+
+    Target: MicrosoftAccount:target=SSO_POP_Device
+    Type: Generic
+    User: 02gmalheiyrdpgmb
+    Saved for this logon only
+
+    Target: LegacyGeneric:target=git:https://github.com
+    Type: Generic
+    User: PersonalAccessToken
+    Local machine persistence
+
+    Target: WindowsLive:target=virtualapp/didlogical
+    Type: Generic
+    User: 02gmalheiyrdpgmb
+    Local machine persistence
+
+    Target: LegacyGeneric:target=OneDrive Cached Credential
+    Type: Generic
+    User: d9e01ed81ebc6b5f
+    Local machine persistence
+
+    Target: LegacyGeneric:target=MicrosoftAccount:user=xxxxxxx
+
+=======================================================================================
+
+getmac
+
+C:\Users\lhmyst\Documents\Shellscript>getmac
+
+Physical Address    Transport Name
+=================== ==========================================================
+.............		.........................
+
+
+=======================================================================================
+
+hostname
+
+C:\Users\lhmyst>hostname
+LAPTOP-SMUJ...
+
+=================================
+
+help
+
+C:\Users\lhmyst>help
+For more information on a specific command, type HELP command-name
+ASSOC          Displays or modifies file extension associations.
+ATTRIB         Displays or changes file attributes.
+BREAK          Sets or clears extended CTRL+C checking.
+BCDEDIT        Sets properties in boot database to control boot loading.
+CACLS          Displays or modifies access control lists (ACLs) of files.
+CALL           Calls one batch program from another.
+CD             Displays the name of or changes the current directory.
+CHCP           Displays or sets the active code page number.
+CHDIR          Displays the name of or changes the current directory.
+CHKDSK         Checks a disk and displays a status report.
+CHKNTFS        Displays or modifies the checking of disk at boot time.
+CLS            Clears the screen.
+CMD            Starts a new instance of the Windows command interpreter.
+COLOR          Sets the default console foreground and background colors.
+COMP           Compares the contents of two files or sets of files.
+COMPACT        Displays or alters the compression of files on NTFS partitions.
+CONVERT        Converts FAT volumes to NTFS.  You cannot convert the
+               current drive.
+COPY           Copies one or more files to another location.
+DATE           Displays or sets the date.
+DEL            Deletes one or more files.
+DIR            Displays a list of files and subdirectories in a directory.
+DISKPART       Displays or configures Disk Partition properties.
+DOSKEY         Edits command lines, recalls Windows commands, and
+               creates macros.
+DRIVERQUERY    Displays current device driver status and properties.
+ECHO           Displays messages, or turns command echoing on or off.
+ENDLOCAL       Ends localization of environment changes in a batch file.
+ERASE          Deletes one or more files.
+EXIT           Quits the CMD.EXE program (command interpreter).
+FC             Compares two files or sets of files, and displays the
+               differences between them.
+FIND           Searches for a text string in a file or files.
+FINDSTR        Searches for strings in files.
+FOR            Runs a specified command for each file in a set of files.
+FORMAT         Formats a disk for use with Windows.
+FSUTIL         Displays or configures the file system properties.
+FTYPE          Displays or modifies file types used in file extension
+               associations.
+GOTO           Directs the Windows command interpreter to a labeled line in
+               a batch program.
+GPRESULT       Displays Group Policy information for machine or user.
+GRAFTABL       Enables Windows to display an extended character set in
+               graphics mode.
+HELP           Provides Help information for Windows commands.
+ICACLS         Display, modify, backup, or restore ACLs for files and
+               directories.
+IF             Performs conditional processing in batch programs.
+LABEL          Creates, changes, or deletes the volume label of a disk.
+MD             Creates a directory.
+MKDIR          Creates a directory.
+MKLINK         Creates Symbolic Links and Hard Links
+MODE           Configures a system device.
+MORE           Displays output one screen at a time.
+MOVE           Moves one or more files from one directory to another
+               directory.
+OPENFILES      Displays files opened by remote users for a file share.
+PATH           Displays or sets a search path for executable files.
+PAUSE          Suspends processing of a batch file and displays a message.
+POPD           Restores the previous value of the current directory saved by
+               PUSHD.
+PRINT          Prints a text file.
+PROMPT         Changes the Windows command prompt.
+PUSHD          Saves the current directory then changes it.
+RD             Removes a directory.
+RECOVER        Recovers readable information from a bad or defective disk.
+REM            Records comments (remarks) in batch files or CONFIG.SYS.
+REN            Renames a file or files.
+RENAME         Renames a file or files.
+REPLACE        Replaces files.
+RMDIR          Removes a directory.
+ROBOCOPY       Advanced utility to copy files and directory trees
+SET            Displays, sets, or removes Windows environment variables.
+SETLOCAL       Begins localization of environment changes in a batch file.
+SC             Displays or configures services (background processes).
+SCHTASKS       Schedules commands and programs to run on a computer.
+SHIFT          Shifts the position of replaceable parameters in batch files.
+SHUTDOWN       Allows proper local or remote shutdown of machine.
+SORT           Sorts input.
+START          Starts a separate window to run a specified program or command.
+SUBST          Associates a path with a drive letter.
+SYSTEMINFO     Displays machine specific properties and configuration.
+TASKLIST       Displays all currently running tasks including services.
+TASKKILL       Kill or stop a running process or application.
+TIME           Displays or sets the system time.
+TITLE          Sets the window title for a CMD.EXE session.
+TREE           Graphically displays the directory structure of a drive or
+               path.
+TYPE           Displays the contents of a text file.
+VER            Displays the Windows version.
+VERIFY         Tells Windows whether to verify that your files are written
+               correctly to a disk.
+VOL            Displays a disk volume label and serial number.
+XCOPY          Copies files and directory trees.
+WMIC           Displays WMI information inside interactive command shell.
+
+For more information on tools see the command-line reference in the online help.
+
+======================================================================================
+
+vol
+
+C:\Users\lhmyst>vol
+ Volume in drive C is OS
+ Volume Serial Number is ......
+
+=========================================
+
+tree
+
+C:\Users\lhmyst\Documents\testgradlemariadb>tree
+Folder PATH listing for volume OS
+Volume serial number is ......
+C:.
++---.gradle
+¦   +---5.6.2
+¦   ¦   +---executionHistory
+¦   ¦   +---fileChanges
+¦   ¦   +---fileContent
+¦   ¦   +---fileHashes
+¦   ¦   +---javaCompile
+¦   ¦   +---vcsMetadata-1
+¦   +---buildOutputCleanup
+¦   +---vcs-1
++---build
+¦   +---classes
+¦   ¦   +---java
+¦   ¦       +---main
+¦   ¦       ¦   +---testgradlemariadb
+¦   ¦       +---test
+¦   ¦           +---testgradlemariadb
+¦   +---generated
+¦   ¦   +---sources
+¦   ¦       +---annotationProcessor
+¦   ¦           +---java
+¦   ¦               +---main
+¦   ¦               +---test
+¦   +---libs
+¦   +---reports
+¦   ¦   +---tests
+¦   ¦       +---test
+¦   ¦           +---classes
+¦   ¦           +---css
+¦   ¦           +---js
+¦   ¦           +---packages
+¦   +---test-results
+¦   ¦   +---test
+¦   ¦       +---binary
+¦   +---tmp
+¦       +---compileJava
+¦       +---compileTestJava
+¦       +---jar
++---gradle
+¦   +---wrapper
++---src
+    +---main
+    ¦   +---java
+    ¦   ¦   +---testgradlemariadb
+    ¦   +---resources
+    +---test
+        +---java
+        ¦   +---testgradlemariadb
+        +---resources
+
+=============================================
+
+systeminfo
+
+C:\Users\lhmyst>systeminfo
+
+Host Name:                 LAPTOP-SMUJ......
+OS Name:                   Microsoft Windows 10 Home Single Language
+OS Version:                10.0.17763 N/A Build 17763
+OS Manufacturer:           Microsoft Corporation
+OS Configuration:          Standalone Workstation
+OS Build Type:             Multiprocessor Free
+Registered Owner:          .........
+
+.....................................................................
+
+========================================================================
+
+gpresult
+
+C:\Users\lhmyst>gpresult
+
+GPRESULT [/S system [/U username [/P [password]]]] [/SCOPE scope]
+           [/USER targetusername] [/R | /V | /Z]
+
+Description:
+    This command line tool displays the Resultant Set of Policy (RSoP)
+    information for a target user and computer.
+
+Parameter List:
+    /S        system           Specifies the remote system to connect to.
+
+    /U        [domain\]user    Specifies the user context under which the
+                               command should run.
+    /P        [password]       Specifies the password for the given user
+                               context. Prompts for input if omitted.
+    /SCOPE    scope            Specifies whether the user or the
+                               computer settings need to be displayed.
+                               Valid values: "USER", "COMPUTER".
+
+    /USER     [domain\]user    Specifies the user name for which the
+                               RSoP data is to be displayed.
+
+    /R                         Displays RSoP summary data.
+
+    /V                         Specifies that verbose information should
+                               be displayed. Verbose information provides
+                               additional detailed settings that have
+                               been applied with a precedence of 1.
+
+    /Z                         Specifies that the super-verbose
+                               information should be displayed. Super-
+                               verbose information provides additional
+                               detailed settings that have been applied
+                               with a precedence of 1 and higher. This
+                               allows you to see if a setting was set in
+                               multiple places. See the Group Policy
+                               online help topic for more information.
+
+    /?                         Displays this help message.
+
+
+Examples:
+    GPRESULT /R
+    GPRESULT /USER targetusername /V
+    GPRESULT /S system /USER targetusername /SCOPE COMPUTER /Z
+    GPRESULT /S system /U username /P password /SCOPE USER /V
+
+=========================================================================
+
+time
+
+C:\Users\lhmyst>time /t
+09:07 PM
+
+=============================
+
+ver
+
+C:\Users\lhmyst>ver
+
+Microsoft Windows [Version 10.0.17763.737]
+
+====================================================================
+
+sc
+
+C:\Users\lhmyst>sc
+DESCRIPTION:
+        SC is a command line program used for communicating with the
+        Service Control Manager and services.
+USAGE:
+        sc <server> [command] [service name] <option1> <option2>...
+
+
+        The option <server> has the form "\\ServerName"
+        Further help on commands can be obtained by typing: "sc [command]"
+        Commands:
+          query-----------Queries the status for a service, or
+                          enumerates the status for types of services.
+          queryex---------Queries the extended status for a service, or
+                          enumerates the status for types of services.
+          start-----------Starts a service.
+          pause-----------Sends a PAUSE control request to a service.
+          interrogate-----Sends an INTERROGATE control request to a service.
+          continue--------Sends a CONTINUE control request to a service.
+          stop------------Sends a STOP request to a service.
+          config----------Changes the configuration of a service (persistent).
+          description-----Changes the description of a service.
+          failure---------Changes the actions taken by a service upon failure.
+          failureflag-----Changes the failure actions flag of a service.
+          sidtype---------Changes the service SID type of a service.
+          privs-----------Changes the required privileges of a service.
+          managedaccount--Changes the service to mark the service account
+                          password as managed by LSA.
+          qc--------------Queries the configuration information for a service.
+          qdescription----Queries the description for a service.
+          qfailure--------Queries the actions taken by a service upon failure.
+          qfailureflag----Queries the failure actions flag of a service.
+          qsidtype--------Queries the service SID type of a service.
+          qprivs----------Queries the required privileges of a service.
+          qtriggerinfo----Queries the trigger parameters of a service.
+          qpreferrednode--Queries the preferred NUMA node of a service.
+          qmanagedaccount-Queries whether a services uses an account with a
+                          password managed by LSA.
+          qprotection-----Queries the process protection level of a service.
+          quserservice----Queries for a local instance of a user service template.
+          delete----------Deletes a service (from the registry).
+          create----------Creates a service. (adds it to the registry).
+          control---------Sends a control to a service.
+          sdshow----------Displays a service's security descriptor.
+          sdset-----------Sets a service's security descriptor.
+          showsid---------Displays the service SID string corresponding to an arbitrary name.
+          triggerinfo-----Configures the trigger parameters of a service.
+          preferrednode---Sets the preferred NUMA node of a service.
+          GetDisplayName--Gets the DisplayName for a service.
+          GetKeyName------Gets the ServiceKeyName for a service.
+          EnumDepend------Enumerates Service Dependencies.
+
+        The following commands don't require a service name:
+        sc <server> <command> <option>
+          boot------------(ok | bad) Indicates whether the last boot should
+                          be saved as the last-known-good boot configuration
+          Lock------------Locks the Service Database
+          QueryLock-------Queries the LockStatus for the SCManager Database
+EXAMPLE:
+        sc start MyService
+
+
+QUERY and QUERYEX OPTIONS:
+        If the query command is followed by a service name, the status
+        for that service is returned.  Further options do not apply in
+        this case.  If the query command is followed by nothing or one of
+        the options listed below, the services are enumerated.
+    type=    Type of services to enumerate (driver, service, userservice, all)
+             (default = service)
+    state=   State of services to enumerate (inactive, all)
+             (default = active)
+    bufsize= The size (in bytes) of the enumeration buffer
+             (default = 4096)
+    ri=      The resume index number at which to begin the enumeration
+             (default = 0)
+    group=   Service group to enumerate
+             (default = all groups)
+
+SYNTAX EXAMPLES
+sc query                - Enumerates status for active services & drivers
+sc query eventlog       - Displays status for the eventlog service
+sc queryex eventlog     - Displays extended status for the eventlog service
+sc query type= driver   - Enumerates only active drivers
+sc query type= service  - Enumerates only Win32 services
+sc query state= all     - Enumerates all services & drivers
+sc query bufsize= 50    - Enumerates with a 50 byte buffer
+sc query ri= 14         - Enumerates with resume index = 14
+sc queryex group= ""    - Enumerates active services not in a group
+sc query type= interact - Enumerates all interactive services
+sc query type= driver group= NDIS     - Enumerates all NDIS drivers
